@@ -1,7 +1,7 @@
 # Module description and use case
 I prototype and test solutions almost daily and have created modules that are optimized for the "way that I work".
 
-This module has *these options* I regularly use to spin up an Azure VM for my work:
+These are *some* of the options I regularly use to spin up an Azure VM for my work:
 - Use a public ip address
 - Create the `A record` in a DNS domain name hosted in Azure
 - The cloud-init / user_data bash script path
