@@ -74,6 +74,8 @@ resource "azurerm_linux_virtual_machine" "vm" {
   size                            = var.size
   admin_username                  = var.admin_user
   disable_password_authentication = true
+  allow_extension_operations      = false
+  #secure_boot_enabled            = true
 
   admin_ssh_key {
     username   = var.admin_user
