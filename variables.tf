@@ -63,6 +63,18 @@ variable "assign_public_ip" {
   default     = false
 }
 
+variable "allow_extension_operations" {
+  description = "Boolean flag to determine if extensions are allowed VM."
+  type        = bool
+  default     = false
+}
+
+variable "secure_boot_enabled" {
+  description = "Boolean flag secure boot should be enabled on the virtual machine."
+  type        = bool
+  default     = true
+}
+
 variable "public_dns_zone_name" {
   description = "The name of a pre-existing public DNS zone that the VM will be assigned to. If assign_public_ip=false, this variable should not be set."
   type        = string
