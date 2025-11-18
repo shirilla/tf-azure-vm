@@ -1,12 +1,12 @@
 # Module description and use case
 I prototype and test solutions almost daily and have created modules that are optimized for the "way that I work".
 
-These are *some* of the options I regularly use to spin up an Azure VM for my work:
-- Use a public ip address
-- Create the `A record` in a DNS domain name hosted in Azure
+---
+This module spins up an Azure VM with (optionally) a public IP address and fqdn. It has other optional variables that I regularly use to spin up an Azure VM for my work:
 - The cloud-init / user_data bash script path
 - The ssh key of my choosing
 - Tags
+- more...
 
 Once provisioned I can quickly ssh into the VM using the fqdn using my ssh key. No clumsy passwords or looking at outputs for the public IP address. When I login the script will have configured the VM and I will not need to run `apt` or whatever.
 
