@@ -103,13 +103,13 @@ variable "image_publisher" {
 variable "image_offer" {
   description = "The offer of the image used to create the VM."
   type        = string
-  default     = "0001-com-ubuntu-server-jammy"
+  default     = "ubuntu-24_04-lts"
 }
 
 variable "image_sku" {
   description = "The SKU of the image used to create the VM."
   type        = string
-  default     = "24_04-lts-gen2"
+  default     = "server"
 }
 
 variable "image_version" {
