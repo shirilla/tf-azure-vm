@@ -109,7 +109,7 @@ variable "image_offer" {
 variable "image_sku" {
   description = "The SKU of the image used to create the VM."
   type        = string
-  default     = "22_04-lts-gen2"
+  default     = "24_04-lts-gen2"
 }
 
 variable "image_version" {
